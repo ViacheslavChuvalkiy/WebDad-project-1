@@ -1,0 +1,228 @@
+
+.header-block{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 120rem;
+    max-height: 40.625rem;
+    background: #FED100;
+}
+
+.header-block-container{
+    margin: 2.5rem 12rem 0 19.2rem;
+    max-width: 98rem;
+    max-height: 40.625rem;
+    padding: 0 1rem;
+
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-tagline{
+    width: 100%;
+    max-width: 6rem;
+    height: auto;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+}
+
+.header-top-tagline span:hover{
+
+    border-bottom: 2px solid steelblue;
+}
+
+
+.header-menu{
+
+}
+
+.header-menu-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.4rem 0;
+}
+
+.header-menu-list-item{
+    list-style-type: none;
+    padding: 0 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+}
+
+
+.header-menu-list-item:hover{
+    cursor: pointer;
+    border-bottom: 2px solid steelblue;
+}
+
+
+
+.header-top-link{
+    min-width: 11rem;
+    max-height: 2.8rem;
+    margin-right: 4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8rem;
+}
+
+
+.header-top-link-phone{
+    text-decoration: underline;
+    color: #333333;
+
+}
+
+.header-center {
+    height: auto;
+    min-height: 18.5rem;
+}
+
+.header-center h1{
+    margin: 2rem 0 1rem 0;
+    font-size: 4.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 5.3rem;
+
+    color: #333333;
+}
+
+.header-center p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 2.2rem;
+
+}
+
+.header-center-buttons{
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 16rem;
+}
+
+.header-center-main-btn{
+    position: absolute;
+    margin-top: 2.7rem;
+    width: 18.2rem;
+    height: 3.7rem;
+    background: #FF352B;
+    color: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: none;
+    opacity: .99;
+    z-index: 5;
+}
+
+.header-center-fake-btn{
+    position: absolute;
+    margin-top: 3.7rem;
+    left: 0.8rem;
+    width: 18.2rem;
+    height: 3.7rem;
+    background: transparent;
+    border: 2px solid #F2F2F2;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.header-bottom{
+    display: flex;
+    position: relative;
+    margin-top: 1.8rem;
+    /*width: auto;*/
+    /*height: 100%;*/
+    max-height: 15rem;
+}
+
+.header-bottom-list{
+    display: flex;
+    justify-content: left;
+    padding: 4rem 0;
+}
+
+
+.header-bottom-list-item{
+    display: flex;
+    list-style-type: none;
+    padding: 0 1rem 0 0;
+}
+
+.header-bottom-list-item-img{
+
+    max-width: 2.4rem;
+    max-height: 2.5rem;
+
+}
+
+.header-bottom-list-item p{
+
+    margin: 0 auto;
+    padding: 0 0.5rem;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+}
+
+.header-bottom-men-img{
+    margin-top: -25.2rem;
+    width: 23.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/img/DeliveryMen.png");
+    z-index: 10;
+}
+
+.header-bottom-car-img{
+    margin-top: -16.06rem;
+    margin-left: -6rem;
+    width: 30rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/img/background-car.png");
+    z-index: 1;
+}
+
+
+.header-bottom-call{
+    display: flex;
+    position: absolute;
+    top: 1.8rem;
+    right: 7rem;
+    width: 8.2rem;
+    height: 8.2rem;
+    border-radius: 50%;
+    background-color: rgba(61, 155, 233, 0.3);
+}
+
+.header-bottom-btn-call{
+    margin: 18px auto;
+    width: 6rem;
+    height: 6rem;
+    background-color: rgba(61, 155, 233, 2);
+    border-radius: 50%;
+    border: none;
+}
+
+.header-bottom-img-call{
+    width: 70%;
+    height: auto;
+}
+
