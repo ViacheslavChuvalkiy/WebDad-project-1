@@ -6,7 +6,7 @@
   "scripts": {
     "scss": "node-sass --output-style compressed -o styles styles/style.scss",
     "serve": "browser-sync start --server --files 'dist/styles/*.css, **/*.html'",
-    "watch:css": "onchange 'style/scss' -- npm run scss",
+    "watch:css": "onchange '**/**/*.scss' -- npm run scss",
     "start": "run-p serve watch:css"
   },
   "repository": {

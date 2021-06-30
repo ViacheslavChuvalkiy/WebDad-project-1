@@ -10,17 +10,20 @@
         font-size: 3.5rem;
         line-height: 4rem;
       }
+
       p {
         font-size: 1.7rem;
         line-height: 1.9rem;
       }
     }
+
     .list-item {
       p {
         line-height: 1rem;
         font-size: 0.9rem;
       }
     }
+
     .bottom {
       .men-img {
         height: 34rem;
@@ -51,9 +54,11 @@
       font-size: 1.3rem;
       line-height: 1rem;
     }
+
     .menu {
       margin: 0;
     }
+
     .link {
       margin: 0;
       min-width: 5rem;
@@ -62,6 +67,7 @@
       font-size: 1.1rem;
       line-height: 1rem;
     }
+
     .menu-list-item {
       padding: 0 1.2rem;
       font-size: 1rem;
@@ -71,11 +77,13 @@
     .center {
       margin-top: 3.7rem;
       min-height: 10rem;
+
       h1 {
         margin: 0.5rem 0 0.5rem 0;
         font-size: 2.5rem;
         line-height: 2rem;
       }
+
       p {
         font-size: 1rem;
         line-height: 1rem;
@@ -83,12 +91,14 @@
 
       .buttons {
       }
+
       .main-btn {
         margin-top: 2.7rem;
         width: 15rem;
         height: 2.7rem;
         font-size: 1.1rem;
       }
+
       .fake-btn {
         margin-top: 3.7rem;
         left: 0.8rem;
@@ -100,6 +110,7 @@
     .list {
       padding: 2rem 0;
     }
+
     .list-item {
       p {
         line-height: .7rem;
@@ -140,26 +151,27 @@
 }
 
 @media (max-width: 70.5rem) {
-
   .container {
     max-width: 63rem;
 
-    .top{
-      .menu{
+    .top {
+      .menu {
         margin: 0;
       }
     }
-    .bottom{
 
-      .men-img{
+    .bottom {
+      .men-img {
         height: 26rem;
         width: 28.5rem;
       }
-      .car-img{
+
+      .car-img {
         height: 21rem;
         width: 29rem;
       }
-      .call{
+
+      .call {
         right: 4rem;
       }
     }
@@ -168,7 +180,6 @@
 }
 
 @media (max-width: 65rem) {
-
   .container {
     max-width: 60rem;
 
@@ -177,11 +188,13 @@
       font-size: 1rem;
       line-height: 1rem;
     }
+
     .menu-list-item {
       padding: 0.2rem 1.2rem;
       font-size: 0.8rem;
       line-height: 1.2rem;
     }
+
     .link {
       min-width: 5rem;
       max-height: 1.3rem;
@@ -189,26 +202,32 @@
       font-size: 0.8rem;
       line-height: 1rem;
     }
+
     .center {
       margin-top: 3.7rem;
       min-height: 10rem;
+
       h1 {
         margin: 0.5rem 0 0.5rem 0;
         font-size: 2.5rem;
         line-height: 2rem;
       }
+
       p {
         font-size: 1.3rem;
         line-height: 1rem;
       }
+
       .buttons {
       }
+
       .main-btn {
         margin-top: 2.7rem;
         width: 11rem;
         height: 2.1rem;
         font-size: 0.9rem;
       }
+
       .fake-btn {
         margin-top: 3.7rem;
         left: 0.8rem;
@@ -216,6 +235,7 @@
         height: 2.1rem;
       }
     }
+
     .list {
       padding: 1rem 0;
     }
@@ -239,19 +259,19 @@
 }
 
 @media (max-width: 60rem) {
-
   .container {
     max-width: 55rem;
 
     .bottom {
       margin-top: 1.2rem;
 
-      .bottom-list{
+      .bottom-list {
         max-width: 23rem;
         justify-content: center;
         flex-wrap: wrap;
         padding: 2rem 0;
       }
+
       .list-item {
         padding: 0.2rem 0.2rem;
       }
@@ -272,22 +292,21 @@
   .container {
     max-width: 54rem;
 
-    .top{
-      .tagline{
+    .top {
+      .tagline {
         font-size: 1.4rem;
       }
 
-      .menu-list-item{
+      .menu-list-item {
         font-size: 1rem;
       }
 
-      .link{
+      .link {
         font-size: 1.2rem;
       }
     }
 
     .bottom {
-
       .bottom-list {
         max-width: 19rem;
       }
@@ -308,12 +327,12 @@
 }
 
 @media (max-width: 54rem) {
-
   .container {
     .bottom {
       .men-img {
         height: 24rem;
       }
+
       .car-img {
         height: 22rem;
       }
@@ -330,11 +349,13 @@
         height: 24rem;
         width: 29.5rem;
       }
+
       .car-img {
         height: 20rem;
         width: 24rem;
       }
-      .call{
+
+      .call {
         right: 5%;
       }
     }
@@ -345,15 +366,14 @@
   .container {
     max-width: 43rem;
 
-    .top{
-      .menu-list-item{
+    .top {
+      .menu-list-item {
         padding: 0 0.8rem 0.13rem 0.8rem;
       }
     }
 
     .bottom {
-
-      .bottom-list{
+      .bottom-list {
         max-width: 16rem;
         justify-content: end;
         margin-bottom: 0.4rem;
@@ -363,6 +383,7 @@
         height: 24rem;
         width: 29.5rem;
       }
+
       .car-img {
         height: 20rem;
         width: 24rem;
@@ -377,18 +398,18 @@
     width: 39rem;
     height: 29rem;
 
-    .top{
-
+    .top {
       .menu-list {
         padding: 0;
       }
     }
 
-    .bottom{
-      .men-img{
+    .bottom {
+      .men-img {
         height: 23rem;
       }
-      .call{
+
+      .call {
         right: 0;
       }
     }
@@ -400,32 +421,31 @@
     margin: 0.5rem 0;
     width: 35rem;
 
-    .top{
-
-      & .menu{
+    .top {
+      & .menu {
         display: none;
       }
 
-      .link{
+      .link {
         display: none;
       }
 
-      .menu-burger{
+      .menu-burger {
         display: block;
       }
-
     }
 
-    .bottom{
-
-      .men-img{
+    .bottom {
+      .men-img {
         height: 28rem;
         width: 29rem;
       }
-      .car-img{
+
+      .car-img {
         display: none;
       }
-      .call{
+
+      .call {
         display: none;
       }
     }
@@ -436,8 +456,8 @@
   .container {
     width: 30rem;
 
-    .bottom{
-      .men-img{
+    .bottom {
+      .men-img {
         height: 24rem;
         width: 36.5rem;
       }
@@ -449,12 +469,13 @@
   .container {
     width: 28rem;
     height: 28.3rem;
-    .center{
+
+    .center {
       margin-top: 2.7rem;
     }
 
-    .bottom{
-      .men-img{
+    .bottom {
+      .men-img {
         height: 22rem;
         width: 36.5rem;
       }
@@ -470,16 +491,15 @@
     height: 37rem;
 
     .top {
-
-      .tagline{
+      .tagline {
         font-size: 1.5rem;
       }
 
-      .menu{
+      .menu {
         display: none;
       }
 
-      .link{
+      .link {
         display: none;
       }
 
@@ -488,32 +508,30 @@
       }
     }
 
-    .center{
+    .center {
       margin-top: 1.2rem;
       text-align: center;
 
-      .buttons{
-
-        .main-btn{
+      .buttons {
+        .main-btn {
           bottom: -26.9rem;
           width: 100%;
           height: 3.75rem;
-          margin:  0;
+          margin: 0;
           padding: 0;
           font-size: 1.25rem;
-
         }
       }
 
-      .fake-btn{
+      .fake-btn {
         display: none;
       }
-
     }
 
     .bottom {
       height: 100%;
       max-height: 20.5rem;
+
       .bottom-list {
         display: none;
       }
