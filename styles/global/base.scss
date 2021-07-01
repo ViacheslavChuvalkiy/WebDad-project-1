@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: $ff-main;
   color: $color_black;
+  background-color: $color_bg_grey;
 }
 
 html {
@@ -9,4 +10,21 @@ html {
   ul, ol {
     list-style-type: none;
   }
+}
+
+h3{
+  font-size: 1.8rem;
+}
+
+h4{
+  font-size: 1.5rem;
+}
+
+.btn-general{
+  width: 15.625rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border: none;
+  background-color: $color_yellow;
 }

@@ -1,9 +1,9 @@
 header {
   display: flex;
-  height: 100vh;
+  //height: 100vh;
   justify-content: center;
   margin: 0 auto;
-  background: #FED100;
+  background: $color_yellow;
 }
 
 .container {
@@ -117,7 +117,7 @@ header {
       margin-top: 2.7rem;
       width: 18.2rem;
       height: 3.7rem;
-      background: #FF352B;
+      background: $color_red;
       color: $color_white;
       font-size: 1.5rem;
       font-weight: 600;
