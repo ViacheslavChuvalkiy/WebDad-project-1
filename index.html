@@ -92,7 +92,8 @@
       </div>
       <div class="main_info_column">
         <span class="main_info_title">Упаковка вещей</span>
-        <p class="main_info_description">Упаковываем вещи в коробки, подписываем. Габаритное и деликатное,  упаковываем отдельно. </p>
+        <p class="main_info_description">Упаковываем вещи в коробки, подписываем. Габаритное и деликатное, упаковываем
+          отдельно. </p>
       </div>
       <div class="main_info_column">
         <span class="main_info_title">Погрузка и транспортировка вещей</span>
@@ -107,7 +108,7 @@
 
   <div class="main_block">
     <h3>Цены</h3>
-    <h4>Фиксированная стоимость на переезд под ключ</h4>
+    <h4 class="main_price_title">Фиксированная стоимость на переезд под ключ</h4>
     <div class="main_prices_row">
       <div class="main_prices_column">
         <h4>1-комнатная кв-ра</h4>
@@ -133,75 +134,121 @@
         <h3>150 руб.</h3>
         <button class="main_price_btn btn-general">Заказать</button>
       </div>
+      <div class="main_price_hide_btn">
+        <button class="price_hide_btn">Все цены</button>
+      </div>
     </div>
   </div>
 
   <div class="main_block">
     <h3>Автопарк</h3>
-    <h4>10 видов автомобилей от 800 кг до 10 тонн</h4>
-    <div class="main-slider-btn">
+    <h4 class="main_slider_title">10 видов автомобилей от 800 кг до 10 тонн</h4>
+    <div class="main_slider_buttons">
       <input type="radio" id="car1" name="car" value="Газели" checked>
-        <label for="car1">Газели</label>
+      <label for="car1">Газели</label>
       <input type="radio" id="car2" name="car" value="Каблуки">
-        <label for="car2">Каблуки</label>
+      <label for="car2">Каблуки</label>
       <input type="radio" id="car3" name="car" value="Грузовики">
-        <label for="car3">Грузовики</label>
+      <label for="car3">Грузовики</label>
     </div>
 
-    <div class="main-slider_row">
-      <div class="main-slider_column">
-        <div class="main-slider-price">
+    <div class="main_slider_row">
+      <div class="main_slider_column">
+        <div class="main_slider_price">
           <h4>Газель 3 метра </h4>
           <p>Ширина 2 м</p>
           <p>Высота 2 м</p>
           <p>Объем 16 м³</p>
           <p>Грузоподъемность 1,5 т</p>
-          <button class="main-slider_btn btn-general">Заказать</button>
+          <button class="main_slider_btn btn-general">Заказать</button>
         </div>
       </div>
-      <div class="main-slider_column">
-        <img class="main-slider_img" src="./img/carGaz.png" alt="car image">
+      <div class="main_slider_column">
+        <img class="main_slider_img" src="./img/carGaz.png" alt="car image">
+        <h4 class="main_slider_sub_title">Газель 3 метра / 1,5 тонны</h4>
+        <div class="slider_menu_car">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="main_slider_hide_btn btn-general">Заказать</button>
       </div>
     </div>
   </div>
 
-  <div class="main_block">
-    <h3>Отзывы</h3>
+  <div class="main_block block_bg_yellow">
+    <div class="main_reviews_tittle">Отзывы</div>
     <div class="main_reviews_row">
       <div class="main_reviews_column">
-        <h3>Ирина</h3>
-        <h4>24.03.2019</h4>
+        <h3>Ирина
+          <pre></pre>
+        </h3>
+        <div class="main_reviews_info">
+          <p class="main_reviews_date">24.03.2019</p>
+          <div class="main_reviews_rating">
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+          </div>
+        </div>
         <p class="main_reviews_text">
-          Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом
+          Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить
+          замечательного водителя газели Алексея. Были трудности с заездом
           во двор, он проявил себя как компетентный
           и профессиональный сотрудник, за что ему огромное...
         </p>
         <a href="#">Читать полностью</a>
       </div>
       <div class="main_reviews_column">
-        <h3>Ирина</h3>
-        <h4>24.03.2019</h4>
+        <h3>Светлана Васильевна </h3>
+        <div class="main_reviews_info">
+          <p class="main_reviews_date">24.03.2019</p>
+          <div class="main_reviews_rating">
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+          </div>
+        </div>
         <p class="main_reviews_text">
-          Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час).  Водитель заранее позвонил, предупредил, что задерживается.
+          Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали на 1,5 часа.
+          Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час). Водитель заранее
+          позвонил, предупредил, что задерживается.
           Когда....
         </p>
         <a href="#">Читать полностью</a>
       </div>
       <div class="main_reviews_column">
-        <h3>Ирина</h3>
-        <h4>24.03.2019</h4>
+        <h3>Ольга Петрова</h3>
+        <div class="main_reviews_info">
+          <p class="main_reviews_date">24.03.2019</p>
+          <div class="main_reviews_rating">
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+          </div>
+        </div>
         <p class="main_reviews_text">
-          Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы, что упрощает расчет. Безо всяких заморочек, в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в сохранности. Особая благодарность Александру за его...
+          Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы, что упрощает расчет. Безо всяких
+          заморочек, в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в сохранности.
+          Особая благодарность Александру за его...
         </p>
         <a href="#">Читать полностью</a>
       </div>
-
+    </div>
+    <div class="reviews_btn_block">
       <button class="main_reviews_btn btn-general">
-       Все отзывы
+        Все отзывы
       </button>
     </div>
   </div>
-
 </main>
 
 </body>
