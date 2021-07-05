@@ -296,6 +296,45 @@ main {
       }
     }
   }
+
+  .main-block__form{
+    display: inline-block;
+    max-width: 45.5rem;
+    height: 55rem;
+    .main_form{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 0 auto;
+      width: 80%;
+      .main-form__row{
+        display: flex;
+        justify-content: space-around;
+        & input, select{
+          width: 35%;
+          padding: 0 0 0.7rem 0;
+          font-size: 1rem;
+          font-weight: 500;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          background-color: #E5E5E5;
+        }
+
+        & select {
+          width: 100%;
+        }
+
+        & .main-form__area{
+          margin: 1rem 0;
+
+          & h4{
+            margin: 1.5rem 0 2rem 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 @import 'media';
