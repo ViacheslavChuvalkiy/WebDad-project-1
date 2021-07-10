@@ -9,20 +9,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
         rel="stylesheet">
+  <link href="./node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 
 <header>
-  <div class="container">
+  <div class="container" id="top">
     <div class="top">
       <div class="tagline"><span>MOVEE</span></div>
       <div class="menu">
         <ul class="menu-list">
-          <li class="menu-list-item">Цены</li>
-          <li class="menu-list-item">Автопарк</li>
-          <li class="menu-list-item">Отзывы</li>
-          <li class="menu-list-item">Контакты</li>
+          <a href="#price">
+            <li href="#price" class="menu-list-item">Цены</li>
+          </a>
+          <a href="#cars">
+            <li class="menu-list-item">Автопарк</li>
+          </a>
+          <a href="#reviews">
+            <li class="menu-list-item">Отзывы</li>
+          </a>
+          <a href="#contacts">
+            <li class="menu-list-item">Контакты</li>
+          </a>
         </ul>
       </div>
 
@@ -106,7 +115,7 @@
     </div>
   </div>
 
-  <div class="main_block">
+  <div class="main_block" id="price">
     <h3>Цены</h3>
     <h4 class="main-price__title">Фиксированная стоимость на переезд под ключ</h4>
     <div class="main-prices__row">
@@ -140,7 +149,7 @@
     </div>
   </div>
 
-  <div class="main_block">
+  <div class="main_block" id="car">
     <h3>Автопарк</h3>
     <h4 class="main-slider__title">10 видов автомобилей от 800 кг до 10 тонн</h4>
     <div class="main-slider__buttons">
@@ -178,7 +187,7 @@
     </div>
   </div>
 
-  <div class="main_block block_bg_yellow">
+  <div class="main_block block_bg_yellow" id="reviews">
     <div class="main-reviews__tittle">Отзывы</div>
     <div class="main-reviews__row">
       <div class="main-reviews__column">
@@ -253,7 +262,8 @@
   <div class="main_block">
     <div class="main-block__form">
       <h3>Закажи переезд прямо сейчас со скидкой %</h3>
-      <h4>Мы перезвоним в течении 10 секунд</h4>
+      <p class="main-form__hide-tittle">Закажи переезд </br> прямо сейчас</p>
+      <h5>Мы перезвоним в течении 10 секунд</h5>
       <form class="main_form">
 
         <div class="main-form__row">
@@ -288,36 +298,151 @@
         </div>
 
         <div class="main-form__row">
-          <input type="radio" id="pay1" name="pay" value="pay1" checked>
-          <label for="pay1">Наличными курьеру</label>
-          <input type="radio" id="pay2" name="pay" value="pay2">
-          <label for="pay2">Картой курьеру</label>
-          <input type="radio" id="pay3" name="pay" value="pay3">
-          <label for="pay3">Банковский перевод</label>
+          <div class="main-form__pay">
+            <h4>Способ оплаты</h4>
+            <input type="radio" id="pay1" name="pay" value="pay1" checked>
+            <label for="pay1">Наличными курьеру</label>
+            <input type="radio" id="pay2" name="pay" value="pay2">
+            <label for="pay2">Картой курьеру</label>
+            <input type="radio" id="pay3" name="pay" value="pay3">
+            <label for="pay3">Банковский перевод</label>
+          </div>
         </div>
 
         <div class="main-form__row">
-          <input type="checkbox" id="option1" name="options" checked>
-          <label for="option1">Вызов замерщика</label>
-          <input type="checkbox" id="option2" name="options" checked>
-          <label for="option2">Упаковка для хрупких предметов</label>
-          <input type="checkbox" id="option3" name="options" checked>
-          <label for="option3">Кран</label>
-          <input type="checkbox" id="option4" name="options">
-          <label for="option4">Сборка мебели</label>
-          <input type="checkbox" id="option5" name="options">
-          <label for="option5">Крупногабаритные предметы</label>
+          <div class="main-form__options">
+            <h4>Дополнительные услуги</h4>
+            <input type="checkbox" id="option1" name="options" checked>
+            <label for="option1">Вызов замерщика</label>
+            <input type="checkbox" id="option2" name="options" checked>
+            <label for="option2">Упаковка для хрупких предметов</label>
+            <input type="checkbox" id="option3" name="options" checked>
+            <label for="option3">Кран</label>
+            <input type="checkbox" id="option4" name="options">
+            <label for="option4">Сборка мебели     </label>
+            <input type="checkbox" id="option5" name="options">
+            <label for="option5">Крупногабаритные предметы</label>
+          </div>
         </div>
 
         <div class="main-form__row">
-          <input type="text">
-          <input type="text">
+          <div class="main-form__submit">
+            <div class="main-form__date">
+              <span>05:37:25</span>
+            </div>
+            <div class="main-form__order">
+              <button type="submit" class="main-form__btn btn-general">Заказать со скидой</button>
+              <button type="submit" class="main-form__fake__btn btn-general">Перезвонить мне</button>
+              <input type="checkbox" id="confirm" name="confirm" value="true" checked>
+              <label for="confirm">Даю согласие на обработку данных</label>
+            </div>
+          </div>
         </div>
       </form>
     </div>
   </div>
 
+  <div class="main_block" id="contacts">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.6683842414013!2d30.522282552317645!3d50.44727723556106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce54073a71cb%3A0xbaf9b9c70b1500d3!2z0JrRgNC10YnQsNGC0LjQug!5e0!3m2!1sru!2sua!4v1625689272865!5m2!1sru!2sua">
+      </iframe>
+      <div class="main_block__map-contact">
+        <div class="tagline"><span>MOVEE</span></div>
+        <p>Брест</p>
+        <p>8 (039)-999-12-13</p>
+        <p><a href="mailto: hello@movee.ru" target="_blank">hello@movee.ru</a></p>
+        <div class="main-block__social">
+          <a href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.vk.com" target="_blank">
+            <i class="fab fa-vk"></i>
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+        </div>
+      </div>
+  </div>
+
 </main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-container__colm">
+      <div class="tagline">
+        <span>MOVEE</span>
+      </div>
+      <a href="">Политика <br/> конфиденциальнности</a>
+      <a href="">Соглашение на обработку<br />  персональных данных</a>
+    </div>
+    <div class="footer-container__colm">
+      <ul class="footer-container__menu">
+        <a href="#top">
+          <li class="footer-container__list">Главная</li>
+        </a>
+        <a href="#price">
+          <li class="footer-container__list">Цены</li>
+        </a>
+        <a href="#cars">
+          <li class="footer-container__list">Автопарк</li>
+        </a>
+        <a href="#reviews">
+          <li class="footer-container__list">Отзывы</li>
+        </a>
+        <a href="#contacts">
+          <li class="footer-container__list">Контакты</li>
+        </a>
+      </ul>
+    </div>
+    <div class="footer-container__colm">
+      <div class="footer-container__social">
+        <a href="https://www.youtube.com" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="https://www.vk.com" target="_blank">
+          <i class="fab fa-vk"></i>
+        </a>
+
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+          <i class="fab fa-instagram-square"></i>
+        </a>
+
+      </div>
+      <div class="footer-container__contact">
+        <a href="mailto: hello@movee.ru" target="_blank">hello@movee.ru</a>
+      </div>
+      <div class="footer-container__share">
+        <h4>Поделиться в <br/> соц.сетях</h4>
+        <a href="https://www.vk.com" target="_blank">
+          <i class="fab fa-vk"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+
+      </div>
+    </div>
+    <div class="footer-container__colm">
+      <div class="footer-container__btn__call">
+      <button class="footer-container__btn btn-general">Обратный звонок</button>
+      <a class="footer-container__link " href="tel: +380299991213">8 (029)-999-12-13</a>
+     </div>
+    </div>
+    <div class="footer-container__colm">
+      <button class="footer-container__hide__btn btn-general">Заказать</button>
+      </div>
+    </div>
+  </div>
+
+</footer>
 
 </body>
 </html>

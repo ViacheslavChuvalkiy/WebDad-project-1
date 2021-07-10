@@ -20,6 +20,12 @@ h4{
   font-size: 1.5rem;
 }
 
+h5{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
 .btn-general{
   width: 15.625rem;
   height: 3.125rem;
@@ -29,4 +35,14 @@ h4{
   background-color: $color_yellow;
 }
 
+.tagline{
+  width: 100%;
+  max-width: 6rem;
+  height: auto;
+  padding-bottom: 0.12px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 600;
+  transition: all 0.5s;
+}
 

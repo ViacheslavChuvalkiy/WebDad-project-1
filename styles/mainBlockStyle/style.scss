@@ -2,12 +2,14 @@ main {
   .main_block {
     display: inline-block;
     text-align: center;
+    position: relative;
     width: 100%;
-    padding: 2.5rem 0 1rem 0;
+    padding: 2.5rem 0 0 0;
+    overflow: hidden;
 
     .main-reviews__tittle {
       display: block;
-      margin: 6.25rem 0 0 0;
+      margin: 1.25rem 0 0 0;
       font-weight: 600;
       font-size: 1.8rem;
     }
@@ -24,6 +26,11 @@ main {
         background-color: $color_white;
         font-weight: 700;
       }
+    }
+
+    & iframe{
+      width: 100%;
+      height: 42rem;
     }
   }
 
@@ -104,7 +111,7 @@ main {
         height: 1.4rem;
         color: $color_black;
         font-size: 1rem;
-        background-color: #F8FBFF;
+        background-color: #E5E5E5;
         text-decoration: underline;
         border: none;
       }
@@ -127,9 +134,10 @@ main {
       display: inline-block;
       width: 12.56rem;
       height: 3.125rem;
-      padding: 0.9rem 1.2rem;
+      padding: 0.7rem 1.2rem;
       margin: 0 0.6rem;
-      background-color: $color_white;
+      font-size: 1.2rem;
+      background-color: #E5E5E5;
       border: 1px solid #EBEBEB;
       box-sizing: border-box;
       cursor: pointer;
@@ -299,19 +307,35 @@ main {
 
   .main-block__form{
     display: inline-block;
-    max-width: 45.5rem;
+    max-width: 51rem;
     height: 55rem;
+
+    & h3{
+      text-align: left;
+      margin: 0.4rem 0 0 0;
+    }
+    & h5{
+      text-align: left;
+      padding: 0;
+      margin: 0.8rem 0 5.5rem 1rem;
+      color: $color_black;
+    }
+    .main-form__hide-tittle{
+      display: none;
+      font-size: 1.3rem;
+      font-weight: 600;
+      Line-height: 1.7rem;
+    }
     .main_form{
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      margin: 0 auto;
-      width: 80%;
+      margin: 0;
+      width: 85%;
       .main-form__row{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         & input, select{
-          width: 35%;
+          width: 45%;
           padding: 0 0 0.7rem 0;
           font-size: 1rem;
           font-weight: 500;
@@ -320,21 +344,194 @@ main {
           border-right: none;
           background-color: #E5E5E5;
         }
-
         & select {
           width: 100%;
         }
-
-        & .main-form__area{
+        & .main-form__area, .main-form__city{
+          width: 45%;
           margin: 1rem 0;
 
           & h4{
             margin: 1.5rem 0 2rem 0;
+            text-align: left;
+          }
+          & input{
+            margin: 1rem 0;
+            width: 100%;
+          }
+        }
+
+        .main-form__pay{
+          display: inline-table;
+          text-align: left;
+          position: relative;
+          & input{
+            display: none;
+          }
+          & input:checked + label:before{
+            content: '\229A';
+            position: absolute;
+            text-align: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            font-size: 0.8rem;
+            color: #FED100;
+            border-radius: 50%;
+            border: 2px solid;
+          }
+          & label{
+            padding: 0 1.3rem 0 2rem;
+            vertical-align: sub;
+          }
+          & label:before{
+            content: '';
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 0 0 0 -2.5rem;
+            border-radius: 50%;
+            border: 2px solid rgba(51, 51, 51, 0.4);
+          }
+        }
+
+        .main-form__options {
+          text-align: left;
+          & h4 {
+            width: 100%;
+            position: relative;
+          }
+          & h4:after {
+            content: '\2329';
+            position: absolute;
+            font-size: 1.9rem;
+            margin: -0.4rem 0 0 1.5rem;
+            transform: rotate(90deg);
+          }
+          & input{
+            display: none;
+          }
+          & input:checked + label:before{
+            content: '\2713';
+            position: absolute;
+            text-align: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            font-size: 1.1rem;
+            color: #FED100;
+            border: 2px solid #FED100;
+          }
+          & label {
+            display: inline-block;
+            margin-left: 47px;
+            margin-bottom: 34px;
+            white-space: pre;
+          }
+          & label:before {
+            content: '';
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 0 0 0 -2.5rem;
+            border: 2px solid rgba(51, 51, 51, 0.4);
+          }
+        }
+
+        .main-form__submit{
+          display: flex;
+          justify-content: space-between;
+          text-align: left;
+
+          .main-form__date{
+            font-weight: 400;
+            font-size: 6rem;
+          }
+          .main-form__order{
+            position: relative;
+            & input{
+              display: none;
+            }
+            & label{
+              display: block;
+              position: relative;
+              margin: 1.5rem 0 0 3.5rem;
+              font-size: 0.8rem;
+              font-weight: 400;
+            }
+            & label:before{
+              content: '';
+              position: absolute;
+              width: 1.5rem;
+              height: 1.5rem;
+              margin: -6px 0 0 -2.1rem;
+              border: 2px solid $color_black;
+            }
+            .main-form__fake__btn, .main-form__btn{
+              margin: 0.5rem 0 0 1.5rem;
+            }
+            .main-form__btn{
+              background: #FF352B;
+            }
+            .main-form__fake__btn{
+              position: absolute;
+              margin: 1rem 0 0 -14.6rem;
+              background: transparent;
+              border: 2px solid #FED100;
+              box-sizing: border-box;
+              z-index: -1;
+            }
           }
         }
       }
     }
   }
+
+  .main_block__map-contact{
+    display: block;
+    position: absolute;
+    margin: -30rem 0 0 5rem;
+    width: 23rem;
+    height: 20rem;
+    text-align: left;
+    background-color: #FFFFFF;
+
+    .tagline{
+      margin: 2.5rem 0 1.5rem 1rem;
+    }
+
+    & p,a{
+      margin: 0 0 2rem 3.5rem;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $color_black;
+    }
+
+    & a{
+      margin: 0 0 2rem 0;
+    }
+
+    & p:before{
+      content: "\2713";
+      margin: -0.3rem -1.4rem;
+      position: absolute;
+      font-weight: 700;
+      color: $color_yellow;
+    }
+
+    .main-block__social{
+      display: inline-block;
+      float: right;
+
+      & a{
+        font-size: 1.3rem;
+        padding: 1.4rem 0.7rem;
+        text-decoration: none;
+      }
+      & a:last-child{
+        padding: 1.4rem 2.4rem 1.4rem 0.7rem;
+      }
+    }
+  }
+
 }
 
 @import 'media';
