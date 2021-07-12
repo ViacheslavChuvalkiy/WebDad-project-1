@@ -1,0 +1,117 @@
+.main-slider__buttons {
+  display: flex;
+  justify-content: center;
+
+  & input {
+    display: none;
+  }
+
+  & input:checked + label {
+    border: 1px solid $color_yellow;
+  }
+
+  & label {
+    display: inline-block;
+    width: 12.56rem;
+    height: 3.125rem;
+    padding: 0.7rem 1.2rem;
+    margin: 0 0.6rem;
+    font-size: 1.2rem;
+    background-color: #E5E5E5;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
+
+.main-slider__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 3rem auto 0 auto;
+  max-width: 76.25rem;
+  max-height: 43.2rem;
+
+  &:before {
+    content: "<";
+    margin-top: 11rem;
+    margin-left: -65rem;
+    position: absolute;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  &:after {
+    content: ">";
+    margin-top: 11rem;
+    margin-right: -74rem;
+    float: right;
+    position: absolute;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .main-slider__column {
+    max-width: 26.3rem;
+    max-height: 36.18rem;
+    text-align: left;
+
+    .main-slider__price {
+      padding: 0 3.5rem;
+    }
+
+    & p {
+      font-size: 1rem;
+      padding: 0.5rem 0;
+    }
+
+    & p:before {
+      content: "\2713";
+      margin: -0.3rem -1.4rem;
+      position: absolute;
+
+      font-weight: 700;
+    }
+
+    .main-slider__img {
+      margin-left: -10rem;
+      width: 40rem;
+      height: 28.3rem;
+    }
+
+    .main-slider__btn {
+      margin-left: -1.4rem;
+    }
+
+    .main-slider__sub__title {
+      display: none;
+      width: 100%;
+      font-size: .9rem;
+      font-weight: 400;
+    }
+
+    .slider-menu__car {
+      display: none;
+      width: 40%;
+      margin: 2.7rem auto;
+
+      & span {
+        width: 0.8rem;
+        height: 0.8rem;
+        background-color: $color_black;
+        border-radius: 50%;
+      }
+
+    }
+
+    .main-slider__hide__btn {
+      display: none;
+      margin: 0 auto;
+      width: 18.25rem;
+      height: 3.7rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+      background-color: $color_yellow;
+    }
+  }
+}

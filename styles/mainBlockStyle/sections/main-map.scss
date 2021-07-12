@@ -1,0 +1,46 @@
+.main_block__map-contact{
+  display: block;
+  position: absolute;
+  margin: -30rem 0 0 5rem;
+  width: 23rem;
+  height: 20rem;
+  text-align: left;
+  background-color: #FFFFFF;
+
+  .tagline{
+    margin: 2.5rem 0 1.5rem 1rem;
+  }
+
+  & p,a{
+    margin: 0 0 2rem 3.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $color_black;
+  }
+
+  & a{
+    margin: 0 0 2rem 0;
+  }
+
+  & p:before{
+    content: "\2713";
+    margin: -0.3rem -1.4rem;
+    position: absolute;
+    font-weight: 700;
+    color: $color_yellow;
+  }
+
+  .main-block__social{
+    display: inline-block;
+    float: right;
+
+    & a{
+      font-size: 1.3rem;
+      padding: 1.4rem 0.7rem;
+      text-decoration: none;
+    }
+    & a:last-child{
+      padding: 1.4rem 2.4rem 1.4rem 0.7rem;
+    }
+  }
+}

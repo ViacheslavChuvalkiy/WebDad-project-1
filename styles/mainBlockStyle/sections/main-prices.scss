@@ -1,0 +1,41 @@
+.main-prices__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2rem auto 0 auto;
+  max-width: 81.5rem;
+  max-height: 44.8rem;
+
+  & p {
+    font-size: 1rem;
+  }
+
+  .main-prices__column {
+    max-width: 26.3rem;
+    max-height: 36.18rem;
+    padding: 4rem 0 0 0;
+  }
+
+  .main-price__btn {
+    margin: 2rem 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .main-price__hide__btn {
+    display: none;
+    width: 100%;
+
+    .price-hide__btn {
+      width: 7rem;
+      height: 1.4rem;
+      color: $color_black;
+      font-size: 1rem;
+      background-color: #E5E5E5;
+      text-decoration: underline;
+      border: none;
+    }
+  }
+}
