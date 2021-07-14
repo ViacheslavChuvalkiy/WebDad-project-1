@@ -24,10 +24,17 @@
 
     .main-reviews__text {
       width: 90%;
+      min-height: 11rem;
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.3rem;
       text-align: left;
+    }
+    .main-reviews__all__text{
+      width: 90%;
+      min-height: 11rem;
+      font-size: 1rem;
+      font-weight: 400;
     }
 
     & a {

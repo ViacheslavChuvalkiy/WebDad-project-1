@@ -153,15 +153,16 @@
     <h3>Автопарк</h3>
     <h4 class="main-slider__title">10 видов автомобилей от 800 кг до 10 тонн</h4>
     <div class="main-slider__buttons">
-      <input type="radio" id="car1" name="car" value="Газели" checked>
-      <label for="car1">Газели</label>
-      <input type="radio" id="car2" name="car" value="Каблуки">
-      <label for="car2">Каблуки</label>
-      <input type="radio" id="car3" name="car" value="Грузовики">
-      <label for="car3">Грузовики</label>
+      <input type="radio" id="car_1" name="car" value="Газели" checked>
+      <label for="car_1">Газели</label>
+      <input type="radio" id="car_2" name="car" value="Каблуки">
+      <label for="car_2">Каблуки</label>
+      <input type="radio" id="car_3" name="car" value="Грузовики">
+      <label for="car_3">Грузовики</label>
     </div>
 
-    <div class="main-slider__row">
+    <div class="main-slider__row" id="car1">
+      <span class="main-slider__left-btn"><</span>
       <div class="main-slider__column">
         <div class="main-slider__price">
           <h4>Газель 3 метра </h4>
@@ -184,6 +185,59 @@
         </div>
         <button class="main-slider__hide__btn btn-general">Заказать</button>
       </div>
+      <span class="main-slider__right-btn">></span>
+    </div>
+    <div class="main-slider__row is-hidden" id="car2">
+      <span class="main-slider__left-btn"><</span>
+      <div class="main-slider__column">
+        <div class="main-slider__price">
+          <h4>Каблук 2 метра</h4>
+          <p>Ширина 1.8 м</p>
+          <p>Высота 1.2 м</p>
+          <p>Объем 8 м³</p>
+          <p>Грузоподъемность 0,8 т</p>
+          <button class="main-slider__btn btn-general">Заказать</button>
+        </div>
+      </div>
+      <div class="main-slider__column">
+        <img class="main-slider__img" src="./img/carLarg.png" alt="car image">
+        <h4 class="main-slider__sub__title">Каблук 2 метра / 0,8 тонны</h4>
+        <div class="slider-menu__car">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="main-slider__hide__btn btn-general">Заказать</button>
+      </div>
+      <span class="main-slider__right-btn">></span>
+    </div>
+    <div class="main-slider__row is-hidden" id="car3">
+      <span class="main-slider__left-btn"><</span>
+      <div class="main-slider__column">
+        <div class="main-slider__price">
+          <h4>Грузовик 3 метра</h4>
+          <p>Ширина 3 м</p>
+          <p>Высота 3 м</p>
+          <p>Объем 20 м³</p>
+          <p>Грузоподъемность 2 т</p>
+          <button class="main-slider__btn btn-general">Заказать</button>
+        </div>
+      </div>
+      <div class="main-slider__column">
+        <img class="main-slider__img" src="./img/carTrack.png" alt="car image">
+        <h4 class="main-slider__sub__title">Грузовик 3 метра / 2 тонны</h4>
+        <div class="slider-menu__car">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="main-slider__hide__btn btn-general">Заказать</button>
+      </div>
+      <span class="main-slider__right-btn">></span>
     </div>
   </div>
 
@@ -210,7 +264,14 @@
           во двор, он проявил себя как компетентный
           и профессиональный сотрудник, за что ему огромное...
         </p>
-        <a href="#">Читать полностью</a>
+        <p class="main-reviews__all__text is-hidden">
+          Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить
+          замечательного водителя газели Алексея. Были трудности с заездом
+          во двор, он проявил себя как компетентный
+          и профессиональный сотрудник, за что ему огромное.
+          Обязательно посоветую всем вашу фирму.
+        </p>
+        <a href="#" class="review_link">Читать полностью</a>
       </div>
       <div class="main-reviews__column">
         <h3>Светлана Васильевна</h3>
@@ -230,7 +291,13 @@
           позвонил, предупредил, что задерживается.
           Когда....
         </p>
-        <a href="#">Читать полностью</a>
+        <p class="main-reviews__all__text is-hidden">
+          Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали на 1,5 часа.
+          Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час). Водитель заранее
+          позвонил, предупредил, что задерживается.
+          Когда приехал, еще раз извинился и сделал скидку.
+        </p>
+        <a href="#" class="review_link">Читать полностью</a>
       </div>
       <div class="main-reviews__column">
         <h3>Ольга Петрова</h3>
@@ -249,7 +316,12 @@
           заморочек, в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в сохранности.
           Особая благодарность Александру за его...
         </p>
-        <a href="#">Читать полностью</a>
+        <p class="main-reviews__all__text is-hidden">
+          Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы, что упрощает расчет. Безо всяких
+          заморочек, в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в сохранности.
+          Особая благодарность Александру за его работу и отношение к клиентам
+        </p>
+        <a href="#" class="review_link">Читать полностью</a>
       </div>
     </div>
     <div class="reviews-btn__block">
@@ -264,7 +336,7 @@
       <h3>Закажи переезд прямо сейчас со скидкой %</h3>
       <p class="main-form__hide-tittle">Закажи переезд </br> прямо сейчас</p>
       <h5>Мы перезвоним в течении 10 секунд</h5>
-      <form class="main_form">
+      <form class="main_form" action="/">
 
         <div class="main-form__row">
           <input type="text" placeholder="Ваше имя">
@@ -290,9 +362,9 @@
             <h4>Укажите город</h4>
             <label for="city-select"></label>
             <select id="city-select">
-              <option value="">Мозырь</option>
+              <option>Мозырь</option>
             </select>
-            <input type="text" placeholder="Добавить город">
+            <input type="text" placeholder="Добавить город" id="addCity">
           </div>
 
         </div>
@@ -323,17 +395,19 @@
 
         <div class="main-form__row">
           <div class="main-form__options">
-            <h4>Дополнительные услуги</h4>
-            <input type="checkbox" id="option1" name="options" checked>
-            <label for="option1">Вызов замерщика</label>
-            <input type="checkbox" id="option2" name="options" checked>
-            <label for="option2">Упаковка для хрупких предметов</label>
-            <input type="checkbox" id="option3" name="options" checked>
-            <label for="option3">Кран</label>
-            <input type="checkbox" id="option4" name="options">
-            <label for="option4">Сборка мебели     </label>
-            <input type="checkbox" id="option5" name="options">
-            <label for="option5">Крупногабаритные предметы</label>
+            <h4 id="main-form__toggle" class="toggle-up">Дополнительные услуги</h4>
+            <div class="main-form__toggle-block hide-block">
+              <input type="checkbox" id="option1" name="options" checked>
+              <label for="option1">Вызов замерщика</label>
+              <input type="checkbox" id="option2" name="options" checked>
+              <label for="option2">Упаковка для хрупких предметов</label>
+              <input type="checkbox" id="option3" name="options" checked>
+              <label for="option3">Кран</label>
+              <input type="checkbox" id="option4" name="options">
+              <label for="option4">Сборка мебели     </label>
+              <input type="checkbox" id="option5" name="options">
+              <label for="option5">Крупногабаритные предметы</label>
+            </div>
           </div>
         </div>
 
@@ -456,5 +530,7 @@
 
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

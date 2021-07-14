@@ -3,6 +3,7 @@ body {
   font-family: $ff-main;
   color: $color_black;
   background-color: $color_bg_grey;
+  user-select: none;
 }
 
 html {
@@ -46,3 +47,11 @@ h5{
   transition: all 0.5s;
 }
 
+.is-hidden{
+  display: none !important;
+}
+
+.hide-block{
+  height: 0;
+  opacity: 0;
+}

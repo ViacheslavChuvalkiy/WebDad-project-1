@@ -28,7 +28,7 @@
       justify-content: space-between;
       & input, select{
         width: 45%;
-        padding: 0 0 0.7rem 0;
+        padding: 0 0 0.2rem 0;
         font-size: 1rem;
         font-weight: 500;
         border-top: none;
@@ -99,17 +99,35 @@
       .main-form__options {
         width: 70%;
         text-align: left;
+
         & h4 {
           width: 100%;
           position: relative;
         }
-        & h4:after {
+
+        .toggle-up:after {
+          content: '\2329';
+          position: absolute;
+          font-size: 1.9rem;
+          margin: -0.2rem 0 0 1.5rem;
+          transform: rotate(-90deg);
+          cursor: pointer;
+        }
+
+        .toggle-down:after {
           content: '\2329';
           position: absolute;
           font-size: 1.9rem;
           margin: -0.4rem 0 0 1.5rem;
           transform: rotate(90deg);
+          cursor: pointer;
         }
+
+        .main-form__toggle-block{
+          transition: opacity 0.1ms;
+          overflow: hidden;
+        }
+
         & input{
           display: none;
         }

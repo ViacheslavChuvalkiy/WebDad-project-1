@@ -32,8 +32,7 @@
   max-width: 76.25rem;
   max-height: 43.2rem;
 
-  &:before {
-    content: "<";
+  .main-slider__left-btn{
     margin-top: 11rem;
     margin-left: -65rem;
     position: absolute;
@@ -41,8 +40,7 @@
     cursor: pointer;
   }
 
-  &:after {
-    content: ">";
+ .main-slider__right-btn {
     margin-top: 11rem;
     margin-right: -74rem;
     float: right;
