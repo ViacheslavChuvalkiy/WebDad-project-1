@@ -162,8 +162,6 @@ window.onload = (function () {
 
           current_el = current_el.replace('car', 'car_');
 
-          const slider_btns = $('.main-slider__buttons input');
-
           for (let index = 0; index < slider_btns.length; index++) {
 
             let slider_btn = slider_btns[index];
