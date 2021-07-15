@@ -28,7 +28,7 @@
       justify-content: space-between;
       & input, select{
         width: 45%;
-        padding: 0 0 0.2rem 0;
+        padding: 0 0 0.2rem 0.5rem;
         font-size: 1rem;
         font-weight: 500;
         border-top: none;
@@ -166,6 +166,15 @@
         .main-form__date{
           font-weight: 400;
           font-size: 6rem;
+
+          & span{
+            position: relative;
+          }
+          .hours:after,.minutes:after{
+            content: ':';
+            position: absolute;
+            top: -0.4rem;
+          }
         }
         .main-form__order{
           position: relative;
@@ -204,6 +213,11 @@
           }
         }
       }
+    }
+
+    .main-form__empty{
+
+      border: 2px solid $color_red;
     }
   }
 }

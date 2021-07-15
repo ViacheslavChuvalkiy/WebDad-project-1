@@ -1,5 +1,7 @@
 window.onload = (function () {
 
+    const main_form = $('.main_form')[0];
+
     const form_toggle__btn = $('#main-form__toggle')[0];
 
     const reviews_links = $('.review_link');
@@ -8,6 +10,27 @@ window.onload = (function () {
 
     const slider_btns_left = $('.main-slider__left-btn');
     const slider_btns_right = $('.main-slider__right-btn');
+
+    const burger_menu = $('.menu-burger')[0];
+
+    const addCityElement = $('#addCity')[0];
+
+    burger_menu.addEventListener('click', (event) => {
+      let menu_list = $('.menu-list')[0];
+
+      let menu_burger = event.currentTarget;
+
+      if (menu_list.classList.contains('menu-list__burger')) {
+        menu_list.classList.remove('menu-list__burger')
+        menu_burger.classList.remove('menu-burger_close');
+      } else {
+        menu_list.classList.add('menu-list__burger');
+        menu_burger.classList.add('menu-burger_close');
+      }
+
+    });
+
+    main_form.addEventListener('submit',ActionForm);
 
     form_toggle__btn.addEventListener('click', () => {
 
@@ -28,6 +51,8 @@ window.onload = (function () {
       }
     });
 
+    addCityElement.addEventListener('change', addCityInForm);
+
     for (let index = 0; index < slider_btns.length; index++) {
       let slider_btn = slider_btns[index];
       slider_btn.addEventListener('click', ClickSliderButton)
@@ -44,6 +69,29 @@ window.onload = (function () {
     for (let index = 0; index < slider_btns_right.length; index++) {
       let slider_btn_right = slider_btns_right[index];
       slider_btn_right.addEventListener('click', changeSliderBlockRight)
+    }
+
+    function ActionForm(event) {
+      event.preventDefault();
+
+      const main_form_inputs = $('.main-form__date');
+      let error = false;
+
+      for (let index = 0; index < main_form_inputs.length; index++){
+
+        let date_inf = main_form_inputs[index];
+
+        if(date_inf.value == ''){
+          date_inf.classList.add('main-form__empty');
+          error = true;
+        }
+
+      }
+
+      if (error){
+        return;
+      }
+
     }
 
     function changeSliderBlockLeft() {
@@ -169,9 +217,6 @@ window.onload = (function () {
       }
     }
 
-    const addCityElement = $('#addCity')[0];
-    addCityElement.addEventListener('change', addCityInForm);
-
     function addCityInForm(event) {
 
       event.preventDefault();
@@ -196,6 +241,50 @@ window.onload = (function () {
       cur_input.appendChild(new_select);
       cur_input.value = new_select.value;
     }
+
+    function getTimeRemaining(endtime, sec) {
+
+      let t = endtime - sec * 1000;
+
+      let seconds = Math.floor((t / 1000) % 60);
+      let minutes = Math.floor((t / 1000 / 60) % 60);
+      let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+      return {
+        'total': t,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
+
+    function initializeClock(id, endtime) {
+
+      let sec = 0;
+      const clock = document.getElementById(id);
+      const hoursSpan = clock.querySelector('.hours');
+      const minutesSpan = clock.querySelector('.minutes');
+      const secondsSpan = clock.querySelector('.seconds');
+
+      function updateClock() {
+        sec++;
+        let t = getTimeRemaining(endtime, sec);
+
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+      }
+
+      updateClock();
+      let timeinterval = setInterval(updateClock, 1000);
+    }
+
+    const countDownDate = new Date("Sep 5, 2021 05:37:25").getTime() - new Date("Sep 5, 2021 00:00:00").getTime();
+    initializeClock('countdown', countDownDate);
+
   }
 );
 
