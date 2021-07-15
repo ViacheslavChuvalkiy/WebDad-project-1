@@ -6,6 +6,8 @@ window.onload = (function () {
 
     const reviews_links = $('.review_link');
 
+    const slider_blocks = $('.main-slider__row');
+
     const slider_btns = $('.main-slider__buttons input');
 
     const slider_btns_left = $('.main-slider__left-btn');
@@ -96,8 +98,6 @@ window.onload = (function () {
 
     function changeSliderBlockLeft() {
 
-      const slider_blocks = $('.main-slider__row');
-
       for (let index = 0; index < slider_blocks.length; index++) {
 
         const slider_block = slider_blocks[index];
@@ -138,7 +138,6 @@ window.onload = (function () {
     };
 
     function changeSliderBlockRight() {
-      const slider_blocks = $('.main-slider__row');
 
       for (let index = 0; index < slider_blocks.length; index++) {
 
