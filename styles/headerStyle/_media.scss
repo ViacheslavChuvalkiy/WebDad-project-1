@@ -34,9 +34,9 @@
         margin: 0 0 0 -9rem;
         height: 28rem;
 
-       & img {
-         margin: -13rem 0 0 -3rem;
-       }
+        & img {
+          margin: -13rem 0 0 -3rem;
+        }
       }
 
       .call {
@@ -52,7 +52,7 @@
     padding: 0 0.1rem;
     max-width: 70rem;
 
-    .top{
+    .top {
       width: 100%;
     }
 
@@ -130,7 +130,7 @@
         width: 22.5rem;
       }
 
-      .car-img{
+      .car-img {
         & img {
           margin: -8rem 0 0 0rem;
         }
@@ -271,48 +271,48 @@
       }
 
       .call {
-        margin: 0 ;
+        margin: 0;
         right: 6rem;
       }
     }
   }
 
 
-@media (max-width: 57.5rem) {
-  .container {
-    max-width: 54rem;
+  @media (max-width: 57.5rem) {
+    .container {
+      max-width: 54rem;
 
-    .top {
-      .tagline {
-        font-size: 1.4rem;
+      .top {
+        .tagline {
+          font-size: 1.4rem;
+        }
+
+        .menu-list-item {
+          font-size: 1rem;
+        }
+
+        .link {
+          font-size: 1.2rem;
+        }
       }
 
-      .menu-list-item {
-        font-size: 1rem;
-      }
-
-      .link {
-        font-size: 1.2rem;
-      }
-    }
-
-    .bottom {
-      .bottom-list {
-        max-width: 19rem;
+      .bottom {
+        .bottom-list {
+          max-width: 19rem;
+        }
       }
     }
   }
-}
 
-@media (max-width: 50rem) {
-  .container {
-    max-width: 46rem;
+  @media (max-width: 50rem) {
+    .container {
+      max-width: 46rem;
 
-    .bottom {
-      .call {
-        margin: 0 -4.1rem 0 0;
+      .bottom {
+        .call {
+          margin: 0 -4.1rem 0 0;
+        }
       }
-    }
     }
   }
 }
@@ -343,7 +343,7 @@
     width: 39rem;
 
     .top {
-      .menu{
+      .menu {
         .menu-list {
           padding: 0 0.8rem;
         }
@@ -366,6 +366,7 @@
 
     .top {
       width: 100%;
+
       & .menu-list {
         display: none;
       }
@@ -471,7 +472,7 @@
     }
   }
 
-  main{
+  main {
     margin: 3.75rem 0 0 0;
   }
 }

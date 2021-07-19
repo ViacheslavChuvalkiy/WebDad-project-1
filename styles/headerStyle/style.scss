@@ -36,13 +36,14 @@ header {
       display: flex;
       justify-content: space-between;
       margin: 0.4rem 0;
-      & a{
+
+      & a {
         text-decoration: none;
         color: inherit;
       }
     }
 
-    .menu-list__burger{
+    .menu-list__burger {
       display: block !important;
       margin: 0;
     }
@@ -93,14 +94,16 @@ header {
 
       margin: 1rem 0 0 0;
 
-      & span:nth-of-type(1){
+      & span:nth-of-type(1) {
         display: none;
       }
-      & span:nth-of-type(2){
+
+      & span:nth-of-type(2) {
         transform: rotate(60deg);
         margin: -2px;
       }
-      & span:nth-of-type(3){
+
+      & span:nth-of-type(3) {
         transform: rotate(-60deg);
         margin: -2px;
       }
@@ -145,8 +148,8 @@ header {
       z-index: 5;
       transition: all 0.5s;
 
-      &:hover{
-        opacity:1;
+      &:hover {
+        opacity: 1;
         background: #FF772B;
       }
     }
@@ -213,6 +216,7 @@ header {
       width: 100%;
       //margin: 0 0 13rem -6rem;
       z-index: 2;
+
       & img {
         width: 100%;
         height: auto;
@@ -231,7 +235,7 @@ header {
       background-color: rgba(61, 155, 233, 0.3);
       z-index: 50;
 
-      &:hover{
+      &:hover {
         background-color: rgba(61, 155, 233, 2);
       }
     }
