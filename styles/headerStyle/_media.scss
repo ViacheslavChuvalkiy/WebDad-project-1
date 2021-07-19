@@ -31,13 +31,16 @@
       }
 
       .car-img {
-        margin-left: -6rem;
+        margin: 0 0 0 -9rem;
         height: 28rem;
-        width: 28rem;
+
+       & img {
+         margin: -13rem 0 0 -3rem;
+       }
       }
 
       .call {
-        right: 5rem;
+        right: 10rem;
       }
     }
   }
@@ -127,9 +130,10 @@
         width: 22.5rem;
       }
 
-      .car-img {
-        height: 25rem;
-        width: 28rem;
+      .car-img{
+        & img {
+          margin: -8rem 0 0 0rem;
+        }
       }
 
       .call {
@@ -165,17 +169,16 @@
 
     .bottom {
       .men-img {
-        height: 26rem;
-        width: 28.5rem;
+        width: 20rem;
       }
 
       .car-img {
-        height: 21rem;
-        width: 29rem;
+        margin: 0 0 0 -9rem;
+        height: 27rem;
       }
 
       .call {
-        right: 4rem;
+        right: 3rem;
       }
     }
   }
@@ -243,18 +246,8 @@
     }
 
     .bottom {
-      .men-img {
-        height: 24rem;
-        width: 23.5rem;
-      }
-
-      .car-img {
-        height: 20rem;
-        width: 23rem;
-      }
-
       .call {
-        right: 3rem;
+        right: 0;
       }
     }
   }
@@ -269,7 +262,6 @@
 
       .bottom-list {
         max-width: 23rem;
-        justify-content: center;
         flex-wrap: wrap;
         padding: 4rem 0;
       }
@@ -278,17 +270,13 @@
         padding: 0.2rem 0.2rem;
       }
 
-      .men-img {
-        height: 25rem;
-        width: 19.5rem;
-      }
-
       .call {
-        margin: 2rem 2rem 0 0 ;
+        margin: 0 ;
+        right: 6rem;
       }
     }
   }
-}
+
 
 @media (max-width: 57.5rem) {
   .container {
@@ -312,32 +300,6 @@
       .bottom-list {
         max-width: 19rem;
       }
-
-      .men-img {
-        height: 26rem;
-      }
-
-      .car-img {
-        height: 22rem;
-      }
-
-      .call {
-        right: 10%;
-      }
-    }
-  }
-}
-
-@media (max-width: 54rem) {
-  .container {
-    .bottom {
-      .men-img {
-        height: 24rem;
-      }
-
-      .car-img {
-        height: 22rem;
-      }
     }
   }
 }
@@ -347,19 +309,10 @@
     max-width: 46rem;
 
     .bottom {
-      .men-img {
-        height: 24rem;
-        width: 29.5rem;
-      }
-
-      .car-img {
-        height: 20rem;
-        width: 24rem;
-      }
-
       .call {
-        margin: 0 -1.1rem 0 0;
+        margin: 0 -4.1rem 0 0;
       }
+    }
     }
   }
 }
@@ -380,25 +333,14 @@
         justify-content: end;
         margin-bottom: 0.4rem;
       }
-
-      .men-img {
-        height: 24rem;
-        width: 29.5rem;
-      }
-
-      .car-img {
-        height: 20rem;
-        width: 24rem;
-      }
     }
   }
 }
 
 @media (max-width: 44rem) {
   .container {
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
     width: 39rem;
-    height: 29rem;
 
     .top {
       .menu{
@@ -409,12 +351,8 @@
     }
 
     .bottom {
-      .men-img {
-        height: 24.7rem;
-      }
-
       .call {
-        right: 0;
+        right: 3rem;
       }
     }
   }
@@ -422,7 +360,8 @@
 
 @media (max-width: 40rem) {
   .container {
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 0 2rem;
+    padding: 0 0.5rem;
     width: 35rem;
 
     .top {
@@ -441,10 +380,6 @@
     }
 
     .bottom {
-      .men-img {
-        height: 29.8rem;
-        width: 29rem;
-      }
 
       .car-img {
         display: none;
@@ -460,39 +395,23 @@
 @media (max-width: 36rem) {
   .container {
     width: 30rem;
-
-    .bottom {
-      .men-img {
-        height: 25.8rem;
-        width: 36.5rem;
-      }
-    }
   }
 }
 
 @media (max-width: 31.5rem) {
   .container {
     width: 28rem;
-    height: 28.3rem;
+    //height: 28.3rem;
 
     .center {
       margin-top: 3.7rem;
     }
-
-    .bottom {
-      .men-img {
-        height: 25rem;
-        width: 36.5rem;
-      }
-    }
   }
-
 }
 
 @media (max-width: 28rem) {
   .container {
-    margin: 1rem 1rem 0 1rem;
-    height: 41rem;
+    margin: 1rem 0 0 0;
 
     .top {
       .tagline {
@@ -515,10 +434,10 @@
 
       .buttons {
         .main-btn {
-          bottom: -25.45rem;
-          width: 100%;
+          bottom: -24.95rem;
+          width: 110%;
           height: 3.75rem;
-          margin: 0;
+          margin: 0 0 0 -0.7rem;
           padding: 0;
           font-size: 1.25rem;
         }
@@ -530,7 +449,6 @@
     }
 
     .bottom {
-      height: 100%;
       max-height: 20.5rem;
 
       .bottom-list {
@@ -547,10 +465,14 @@
 
       .men-img {
         height: 20rem;
-        width: 100%;
-        margin-left: 16%;
+        width: 85%;
+        margin-left: 19%;
       }
     }
+  }
+
+  main{
+    margin: 3.75rem 0 0 0;
   }
 }
 

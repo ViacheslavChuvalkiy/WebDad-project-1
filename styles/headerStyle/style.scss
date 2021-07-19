@@ -6,17 +6,18 @@ header {
 }
 
 .container {
-  width: 100%;
+  //width: 100%;
   height: auto;
-  margin: 2.5rem 12rem 0 19.2rem;
+  //margin: 2.5rem 12rem 0 9rem;
+  padding: 2.5rem 0;
   max-width: 98rem;
-  padding: 0 1rem;
 
   .top {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
     height: 2rem;
+    margin: 0 auto;
 
     .tagline {
       span {
@@ -27,7 +28,7 @@ header {
     }
 
     .menu {
-      margin-left: 13rem;
+      //margin-left: 13rem;
       height: 100%;
     }
 
@@ -62,7 +63,7 @@ header {
     .link {
       min-width: 11rem;
       max-height: 2.8rem;
-      margin-right: 4rem;
+      //margin-right: 4rem;
       font-size: 1.4rem;
       font-weight: 500;
       line-height: 1.8rem;
@@ -76,6 +77,7 @@ header {
     .menu-burger {
       display: none;
       transition: all 0.3s;
+      margin-right: 1rem;
 
       & span {
         display: block;
@@ -89,7 +91,7 @@ header {
 
     .menu-burger_close {
 
-      margin: 0.4rem 0 0 0;
+      margin: 1rem 0 0 0;
 
       & span:nth-of-type(1){
         display: none;
@@ -196,23 +198,26 @@ header {
 
     .men-img {
       align-self: flex-end;
-      height: 35rem;
-      width: 24.5rem;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url("../../img/deliveryMen.png");
+      width: 90%;
+      height: 34rem;
       z-index: 10;
+
+      & img {
+        width: inherit;
+        height: inherit;
+        margin: 0;
+      }
     }
 
     .car-img {
-      align-self: flex-end;
-      margin: 0 0 2rem -6rem;
-      height: 29rem;
-      width: 30rem;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url("../../img/backCar.png");
+      width: 100%;
+      //margin: 0 0 13rem -6rem;
       z-index: 2;
+      & img {
+        width: 100%;
+        height: auto;
+        margin: -13rem 0 0 -8rem;
+      }
     }
 
     .call {
