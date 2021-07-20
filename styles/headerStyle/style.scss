@@ -6,16 +6,15 @@ header {
 }
 
 .container {
-  //width: 100%;
+  width: 100%;
   height: auto;
-  //margin: 2.5rem 12rem 0 9rem;
-  padding: 2.5rem 0;
+  padding: 2.5rem 1rem 0 1rem;
   max-width: 98rem;
 
   .top {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     height: 2rem;
     margin: 0 auto;
 
@@ -28,7 +27,6 @@ header {
     }
 
     .menu {
-      //margin-left: 13rem;
       height: 100%;
     }
 
@@ -45,7 +43,7 @@ header {
 
     .menu-list__burger {
       display: block !important;
-      margin: 0;
+      margin: 0 0 0 -8rem;
     }
 
     .menu-list-item {
@@ -62,9 +60,7 @@ header {
     }
 
     .link {
-      min-width: 11rem;
-      max-height: 2.8rem;
-      //margin-right: 4rem;
+      margin: 0 15% 0 0;
       font-size: 1.4rem;
       font-weight: 500;
       line-height: 1.8rem;
@@ -105,7 +101,7 @@ header {
 
       & span:nth-of-type(3) {
         transform: rotate(-60deg);
-        margin: -2px;
+        margin: -3px 0 0 -1px;
       }
     }
   }
@@ -214,7 +210,6 @@ header {
 
     .car-img {
       width: 100%;
-      //margin: 0 0 13rem -6rem;
       z-index: 2;
 
       & img {

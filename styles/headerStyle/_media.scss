@@ -1,8 +1,6 @@
 @media (max-width: 88rem) {
   .container {
-    margin: 2.5rem 0 0 0;
-    padding: 0 1rem;
-    max-width: 78rem;
+    padding: 2.5rem 1rem 0 1rem;
 
     .center {
       h1 {
@@ -27,7 +25,6 @@
     .bottom {
       .men-img {
         height: 34rem;
-        width: 24.5rem;
       }
 
       .car-img {
@@ -40,7 +37,7 @@
       }
 
       .call {
-        right: 10rem;
+        right: 6rem;
       }
     }
   }
@@ -49,36 +46,32 @@
 @media (max-width: 78.5rem) {
   .container {
     margin: 1.5rem 1rem 0 1rem;
-    padding: 0 0.1rem;
-    max-width: 70rem;
+    padding: 0 0.5rem;
 
     .top {
       width: 100%;
-    }
 
-    .tagline {
-      max-width: 4rem;
-      font-size: 1.3rem;
-      line-height: 1rem;
-    }
+      .tagline {
+        max-width: 4rem;
+        font-size: 1.3rem;
+        line-height: 1rem;
+      }
 
-    .menu {
-      margin: 0;
-    }
+      .menu {
+        margin: 0;
+      }
 
-    .link {
-      margin: 0;
-      min-width: 5rem;
-      max-height: 1.8rem;
-      margin-right: 2rem;
-      font-size: 1.1rem;
-      line-height: 1rem;
-    }
+      .link {
+        margin: 0;
+        font-size: 1.1rem;
+        line-height: 1rem;
+      }
 
-    .menu-list-item {
-      padding: 0 1.2rem;
-      font-size: 1rem;
-      line-height: 1.5rem;
+      .menu-list-item {
+        padding: 0 1.2rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
     }
 
     .center {
@@ -127,7 +120,6 @@
     .bottom {
       .men-img {
         height: 28rem;
-        width: 22.5rem;
       }
 
       .car-img {
@@ -137,7 +129,7 @@
       }
 
       .call {
-        right: 6rem;
+        right: 3rem;
         top: 36%;
         width: 6.3rem;
         height: 6.3rem;
@@ -159,8 +151,6 @@
 
 @media (max-width: 70.8rem) {
   .container {
-    max-width: 63rem;
-
     .top {
       .menu {
         margin: 0;
@@ -168,9 +158,6 @@
     }
 
     .bottom {
-      .men-img {
-        width: 20rem;
-      }
 
       .car-img {
         margin: 0 0 0 -9rem;
@@ -178,7 +165,8 @@
       }
 
       .call {
-        right: 3rem;
+        right: 0;
+        top: 50%;
       }
     }
   }
@@ -187,7 +175,6 @@
 
 @media (max-width: 65rem) {
   .container {
-    max-width: 60rem;
 
     .tagline {
       max-width: 4rem;
@@ -244,18 +231,11 @@
     .list {
       padding: 1rem 0;
     }
-
-    .bottom {
-      .call {
-        right: 0;
-      }
-    }
   }
 }
 
 @media (max-width: 60rem) {
   .container {
-    max-width: 55rem;
 
     .bottom {
       margin-top: 1.2rem;
@@ -280,7 +260,6 @@
 
   @media (max-width: 57.5rem) {
     .container {
-      max-width: 54rem;
 
       .top {
         .tagline {
@@ -306,7 +285,6 @@
 
   @media (max-width: 50rem) {
     .container {
-      max-width: 46rem;
 
       .bottom {
         .call {
@@ -319,7 +297,6 @@
 
 @media (max-width: 47.5rem) {
   .container {
-    max-width: 43rem;
 
     .top {
       .menu-list-item {
@@ -340,7 +317,6 @@
 @media (max-width: 44rem) {
   .container {
     margin: 1rem 0 0 0;
-    width: 39rem;
 
     .top {
       .menu {
@@ -352,7 +328,8 @@
 
     .bottom {
       .call {
-        right: 3rem;
+        top: 30%;
+        margin: 0 -5.1rem 0 0;
       }
     }
   }
@@ -360,9 +337,8 @@
 
 @media (max-width: 40rem) {
   .container {
-    margin: 0.5rem 0 0 2rem;
-    padding: 0 0.5rem;
-    width: 35rem;
+    margin: 0;
+    padding: 1rem 0.5rem 0 0.5rem;
 
     .top {
       width: 100%;
@@ -377,10 +353,19 @@
 
       .menu-burger {
         display: block;
+
+        & span {
+          width: 1.7rem;
+          height: 0.2em;
+        }
       }
     }
 
     .bottom {
+
+      .men-img {
+        width: 100%;
+      }
 
       .car-img {
         display: none;
@@ -393,16 +378,8 @@
   }
 }
 
-@media (max-width: 36rem) {
-  .container {
-    width: 30rem;
-  }
-}
-
 @media (max-width: 31.5rem) {
   .container {
-    width: 28rem;
-    //height: 28.3rem;
 
     .center {
       margin-top: 3.7rem;
@@ -412,8 +389,6 @@
 
 @media (max-width: 28rem) {
   .container {
-    margin: 1rem 0 0 0;
-
     .top {
       .tagline {
         font-size: 1.5rem;
@@ -427,6 +402,10 @@
       .link {
         display: none;
       }
+
+      .menu-list__burger {
+        margin: 0;
+      }
     }
 
     .center {
@@ -436,9 +415,8 @@
       .buttons {
         .main-btn {
           bottom: -24.95rem;
-          width: 110%;
+          width: 100%;
           height: 3.75rem;
-          margin: 0 0 0 -0.7rem;
           padding: 0;
           font-size: 1.25rem;
         }
