@@ -49,24 +49,19 @@
     padding: 0 0.5rem;
 
     .top {
-      width: 100%;
-
       .tagline {
         max-width: 4rem;
         font-size: 1.3rem;
         line-height: 1rem;
       }
-
       .menu {
         margin: 0;
       }
-
       .link {
         margin: 0;
         font-size: 1.1rem;
         line-height: 1rem;
       }
-
       .menu-list-item {
         padding: 0 1.2rem;
         font-size: 1rem;
@@ -76,28 +71,23 @@
 
     .center {
       margin-top: 3.7rem;
-
       h1 {
         margin: 0.5rem 0 0.9rem 0;
         font-size: 2.5rem;
         line-height: 2rem;
       }
-
       p {
         font-size: 1rem;
         line-height: 1rem;
       }
-
       .buttons {
       }
-
       .main-btn {
         margin-top: 2.7rem;
         width: 15rem;
         height: 2.7rem;
         font-size: 1.1rem;
       }
-
       .fake-btn {
         margin-top: 3.7rem;
         left: 0.8rem;
@@ -109,7 +99,6 @@
     .list {
       padding: 2rem 0;
     }
-
     .list-item {
       p {
         line-height: .7rem;
@@ -285,7 +274,6 @@
 
   @media (max-width: 50rem) {
     .container {
-
       .bottom {
         .call {
           margin: 0 -4.1rem 0 0;
@@ -297,7 +285,6 @@
 
 @media (max-width: 47.5rem) {
   .container {
-
     .top {
       .menu-list-item {
         padding: 0 0.8rem 0.13rem 0.8rem;
@@ -317,7 +304,6 @@
 @media (max-width: 44rem) {
   .container {
     margin: 1rem 0 0 0;
-
     .top {
       .menu {
         .menu-list {
@@ -341,16 +327,12 @@
     padding: 1rem 0.5rem 0 0.5rem;
 
     .top {
-      width: 100%;
-
       & .menu-list {
         display: none;
       }
-
       .link {
         display: none;
       }
-
       .menu-burger {
         display: block;
 
@@ -362,15 +344,12 @@
     }
 
     .bottom {
-
       .men-img {
         width: 100%;
       }
-
       .car-img {
         display: none;
       }
-
       .call {
         display: none;
       }
@@ -380,7 +359,6 @@
 
 @media (max-width: 31.5rem) {
   .container {
-
     .center {
       margin-top: 3.7rem;
     }
@@ -393,16 +371,13 @@
       .tagline {
         font-size: 1.5rem;
       }
-
       .menu-list {
         display: none;
         padding: 0;
       }
-
       .link {
         display: none;
       }
-
       .menu-list__burger {
         margin: 0;
       }
@@ -411,7 +386,6 @@
     .center {
       margin: 4.2rem 0 0 0;
       text-align: center;
-
       .buttons {
         .main-btn {
           bottom: -24.95rem;
@@ -421,7 +395,6 @@
           font-size: 1.25rem;
         }
       }
-
       .fake-btn {
         display: none;
       }
@@ -429,19 +402,15 @@
 
     .bottom {
       max-height: 20.5rem;
-
       .bottom-list {
         display: none;
       }
-
       .call {
         display: none;
       }
-
       .car-img {
         display: none;
       }
-
       .men-img {
         height: 20rem;
         width: 85%;
