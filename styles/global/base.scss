@@ -4,6 +4,7 @@ body {
   color: $color_black;
   background-color: $color_bg_grey;
   user-select: none;
+  overflow-x: hidden;
 }
 
 html {

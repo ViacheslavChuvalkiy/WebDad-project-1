@@ -1,6 +1,10 @@
 @media (max-width: 88rem) {
   .container {
-    padding: 2.5rem 1rem 0 1rem;
+    .top{
+      .link{
+        padding: 0 3rem 0 0;
+      }
+    }
 
     .center {
       h1 {
@@ -45,7 +49,6 @@
 
 @media (max-width: 78.5rem) {
   .container {
-    padding: 1.5rem 1rem 0 1rem;
 
     .top {
       .tagline {
@@ -93,8 +96,7 @@
       }
 
       .fake-btn {
-        margin-top: 3.7rem;
-        left: 0.8rem;
+        margin-top: 3.3rem;
         width: 15rem;
         height: 2.7rem;
       }
@@ -123,7 +125,6 @@
       }
 
       .call {
-        right: 3rem;
         top: 36%;
         width: 6.3rem;
         height: 6.3rem;
@@ -159,8 +160,7 @@
       }
 
       .call {
-        right: 0;
-        top: 50%;
+        top: 30%;
       }
     }
   }
@@ -210,8 +210,6 @@
       }
 
       .fake-btn {
-        margin-top: 3.7rem;
-        left: 0.8rem;
         width: 11rem;
         height: 2.1rem;
       }
@@ -219,6 +217,12 @@
 
     .list {
       padding: 1rem 0;
+    }
+
+    .bottom{
+      .call{
+        right: 2rem;
+      }
     }
   }
 }
@@ -258,7 +262,7 @@
       }
 
       .link {
-        font-size: 1.2rem;
+        padding: 0 2rem 0 0;
       }
     }
 
@@ -319,8 +323,6 @@
 
 @media (max-width: 40rem) {
   .container {
-    padding: 1rem 0 0 0.5rem;
-
     .top {
       & .menu-list {
         display: none;
@@ -341,6 +343,7 @@
     }
 
     .bottom {
+      padding: 1rem 0.5rem 0 0.5rem;
       .men-img {
         width: 100%;
       }
@@ -391,8 +394,9 @@
 
       .buttons {
         .main-btn {
-          bottom: -24.95rem;
+          bottom: -25.95rem;
           width: 100%;
+          left: 0;
           height: 3.75rem;
           padding: 0;
           font-size: 1.25rem;
